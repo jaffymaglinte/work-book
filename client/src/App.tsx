@@ -9,7 +9,7 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 
 // Testing
-import { Input } from '@/components/atoms/Input';
+import { TextField } from '@/components/atoms/TextField';
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <Input />
+      <TextField size="small" />
     </div>
   );
 }
