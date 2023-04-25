@@ -4,7 +4,7 @@ import { Header } from '.';
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
 const meta = {
-  title: 'Template/Header',
+  title: 'Organism/Header',
   component: Header,
 } satisfies Meta<typeof Header>;
 
