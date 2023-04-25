@@ -5,7 +5,7 @@ import StyledHeader, {
   StyledSettingSection,
 } from './Elements';
 import { TextField } from '@/components/atoms/TextField';
-import Tabs from '@/components/atoms/Tabs/Tabs';
+import Tabs from '@/components/atoms/Tabs';
 import { Tab } from '@/components/atoms/Tab';
 import { Button } from '@/components/atoms/Button';
 
