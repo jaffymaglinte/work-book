@@ -17,6 +17,8 @@ import StoreIcon from '@mui/icons-material/Store';
 import PeopleIcon from '@mui/icons-material/People';
 import WidgetsIcon from '@mui/icons-material/Widgets';
 import MessageIcon from '@mui/icons-material/Message';
+import FaceRetouchingNaturalIcon from '@mui/icons-material/FaceRetouchingNatural';
+import NotificationsIcon from '@mui/icons-material/Notifications';
 
 const Header = () => {
   const [value, setValue] = React.useState(0);
@@ -49,7 +51,10 @@ const Header = () => {
           <MessageIcon />
         </Button>
         <Button>
-          <WidgetsIcon />
+          <NotificationsIcon />
+        </Button>
+        <Button>
+          <FaceRetouchingNaturalIcon />
         </Button>
       </StyledSettingSection>
     </StyledHeader>
