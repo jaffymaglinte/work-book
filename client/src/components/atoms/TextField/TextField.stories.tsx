@@ -15,5 +15,6 @@ type Story = StoryObj<typeof meta>;
 export const Small: Story = {
   args: {
     placeholder: 'Search facebook',
+    size: 'small',
   },
 };
