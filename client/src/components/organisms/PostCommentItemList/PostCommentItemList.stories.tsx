@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import CommentItemList from '.';
+import PostCommentItemList from '.';
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
 const meta = {
-  title: 'Organism/CommentItemList',
-  component: CommentItemList,
+  title: 'Organism/PostCommentItemList',
+  component: PostCommentItemList,
   argTypes: {
     onClickLike: {
       action: 'clicked',
@@ -13,7 +13,7 @@ const meta = {
       action: 'clicked',
     },
   },
-} satisfies Meta<typeof CommentItemList>;
+} satisfies Meta<typeof PostCommentItemList>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
