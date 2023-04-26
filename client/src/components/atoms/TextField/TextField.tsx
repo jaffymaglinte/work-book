@@ -1,8 +1,9 @@
 import React from 'react';
 import StyledOutlinedInput, { OutlinedInputProps } from './elements';
 
-const Component = ({ ...props }: OutlinedInputProps) => {
-  return <StyledOutlinedInput placeholder="Please enter text" {...props} />;
+const Component = (props: OutlinedInputProps) => {
+  const { ...rest } = props;
+  return <StyledOutlinedInput {...rest} />;
 };
 
 export default Component;
