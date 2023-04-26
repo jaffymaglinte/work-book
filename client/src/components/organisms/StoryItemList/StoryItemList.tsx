@@ -32,7 +32,7 @@ const StoryItemList = ({ children, ...props }: BoxProps) => {
         responsive={responsive}
         ssr={true} // means to render carousel on server-side.
         containerClass="carousel-container"
-        removeArrowOnDeviceType={['tablet', 'mobile']}
+        // removeArrowOnDeviceType={['tablet', 'mobile']}
         itemClass="carousel-item-padding-40-px">
         {children}
       </Carousel>
