@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, Link } from '@mui/material';
 import StyledCommentItem from './elements';
 import CommentItemProps from './types';
 
@@ -7,7 +7,7 @@ import CommentItemProps from './types';
 import Face5Icon from '@mui/icons-material/Face5';
 
 const CommentItem = (props: CommentItemProps) => {
-  const { name, content, ...rest } = props;
+  const { name, content, onClickReply, onClickLike, ...rest } = props;
 
   return (
     <StyledCommentItem {...rest}>
@@ -18,6 +18,14 @@ const CommentItem = (props: CommentItemProps) => {
       <Box className="details">
         <Typography variant="subtitle2">{name}</Typography>
         <Typography variant="body2">{content}</Typography>
+        <Box className="actions">
+          <Link href="#" underline="hover" onClick={onClickLike}>
+            Like
+          </Link>
+          <Link href="#" underline="hover" onClick={onClickReply}>
+            Reply
+          </Link>
+        </Box>
       </Box>
     </StyledCommentItem>
   );

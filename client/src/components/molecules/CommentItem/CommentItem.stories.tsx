@@ -10,6 +10,14 @@ import Face6Icon from '@mui/icons-material/Face6';
 const meta = {
   title: 'Molecule/CommentItem',
   component: CommentItem,
+  argTypes: {
+    onClickLike: {
+      action: 'clicked',
+    },
+    onClickReply: {
+      action: 'clicked',
+    },
+  },
 } satisfies Meta<typeof CommentItem>;
 
 export default meta;
