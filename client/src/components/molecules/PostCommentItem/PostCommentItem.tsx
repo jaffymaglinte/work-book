@@ -1,12 +1,12 @@
 import React from 'react';
 import { Box, Typography, Link } from '@mui/material';
 import StyledCommentItem from './elements';
-import CommentItemProps from './types';
+import PostCommentItemProps from './types';
 
 // mui icons
 import Face5Icon from '@mui/icons-material/Face5';
 
-const CommentItem = (props: CommentItemProps) => {
+const PostCommentItem = (props: PostCommentItemProps) => {
   const { name, content, onClickReply, onClickLike, ...rest } = props;
 
   return (
@@ -31,4 +31,4 @@ const CommentItem = (props: CommentItemProps) => {
   );
 };
 
-export default CommentItem;
+export default PostCommentItem;
