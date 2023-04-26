@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { Box } from '@mui/material';
 
-const StyledPostItemComment = styled(Box)`
+const StyledPostItemCommentItem = styled(Box)`
   display: flex;
   gap: 5px;
   align-items: start;
@@ -31,4 +31,4 @@ const StyledPostItemComment = styled(Box)`
   }
 `;
 
-export default StyledPostItemComment;
+export default StyledPostItemCommentItem;

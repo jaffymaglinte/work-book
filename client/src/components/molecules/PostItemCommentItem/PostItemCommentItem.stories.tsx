@@ -1,15 +1,12 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 
-import PostItemComment from '.';
-
-// mui icons
-import Face6Icon from '@mui/icons-material/Face6';
+import PostItemCommentItem from '.';
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
 const meta = {
-  title: 'Molecule/PostItemComment',
-  component: PostItemComment,
+  title: 'Molecule/PostItemCommentItem',
+  component: PostItemCommentItem,
   argTypes: {
     onClickLike: {
       action: 'clicked',
@@ -18,7 +15,7 @@ const meta = {
       action: 'clicked',
     },
   },
-} satisfies Meta<typeof PostItemComment>;
+} satisfies Meta<typeof PostItemCommentItem>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
