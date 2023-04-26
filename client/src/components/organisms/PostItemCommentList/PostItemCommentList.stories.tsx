@@ -3,7 +3,7 @@ import PostCommentItemList from '.';
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
 const meta = {
-  title: 'Organism/PostCommentItemList',
+  title: 'Organism/PostItemCommentList',
   component: PostCommentItemList,
   argTypes: {
     onClickLike: {

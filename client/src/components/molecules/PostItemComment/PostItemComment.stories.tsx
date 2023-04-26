@@ -1,18 +1,24 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 
-import PostCommentForm from '.';
+import PostItemComment from '.';
+
+// mui icons
+import Face6Icon from '@mui/icons-material/Face6';
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
 const meta = {
-  title: 'Molecule/PostCommentForm',
-  component: PostCommentForm,
+  title: 'Molecule/PostItemComment',
+  component: PostItemComment,
   argTypes: {
-    onEnter: {
-      action: 'onKeyDown',
+    onClickLike: {
+      action: 'clicked',
+    },
+    onClickReply: {
+      action: 'clicked',
     },
   },
-} satisfies Meta<typeof PostCommentForm>;
+} satisfies Meta<typeof PostItemComment>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
@@ -20,6 +26,7 @@ type Story = StoryObj<typeof meta>;
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Primary: Story = {
   args: {
-    // onEnter: (e) => console.log(e),
+    name: 'Jaffy Maglinte',
+    content: 'Lorem ipsum sample',
   },
 };

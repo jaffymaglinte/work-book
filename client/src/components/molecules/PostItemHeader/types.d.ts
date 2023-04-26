@@ -5,9 +5,9 @@ export enum Status {
   PRIVATE = 'PUBLIC',
 }
 export interface PostItemHeaderProps extends BoxProps {
-  profile?: string | React.ReactNode | undefined;
-  postBy?: string;
-  postDate?: string;
-  postStatus?: Status;
+  profile: React.ReactNode;
+  postBy: string;
+  postDate: string;
+  postStatus: Status;
   onClickClose?: (event: React.MouseEvent<HTMLElement>) => void;
 }

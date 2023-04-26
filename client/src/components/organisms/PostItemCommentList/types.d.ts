@@ -1,6 +1,6 @@
 import { BoxProps } from '@mui/material';
 
-export default interface PostCommentItemListProps extends BoxProps {
+export default interface PostItemCommentListProps extends BoxProps {
   data: Data[];
   onClickLike: (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => void;
   onClickReply: (

@@ -1,17 +1,17 @@
 import React from 'react';
-import StyledPostCommentItemList from './elements';
-import PostCommentItemListProps from './types';
+import StyledPostItemCommentList from './elements';
+import PostItemCommentListProps from './types';
 
-import PostCommentItem from '@/components/molecules/PostCommentItem';
+import PostItemComment from '@/components/molecules/PostItemComment';
 
-const PostCommentItemList = (props: PostCommentItemListProps) => {
+const PostCommentItemList = (props: PostItemCommentListProps) => {
   const { data, onClickLike, onClickReply, ...rest } = props;
 
   return (
-    <StyledPostCommentItemList {...rest}>
+    <StyledPostItemCommentList {...rest}>
       {data.map((i: any) => {
         return (
-          <PostCommentItem
+          <PostItemComment
             name={i.name}
             content={i.content}
             onClickLike={onClickLike}
@@ -20,7 +20,7 @@ const PostCommentItemList = (props: PostCommentItemListProps) => {
           />
         );
       })}
-    </StyledPostCommentItemList>
+    </StyledPostItemCommentList>
   );
 };
 

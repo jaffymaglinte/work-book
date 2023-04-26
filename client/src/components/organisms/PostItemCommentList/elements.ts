@@ -1,10 +1,10 @@
 import styled from '@emotion/styled';
 import { Box } from '@mui/material';
 
-const StyledPostCommentItemList = styled(Box)`
+const StyledPostItemCommentList = styled(Box)`
   & .comment_item {
     margin-bottom: 30px;
   }
 `;
 
-export default StyledPostCommentItemList;
+export default StyledPostItemCommentList;
