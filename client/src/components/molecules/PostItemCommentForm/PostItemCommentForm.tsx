@@ -1,16 +1,16 @@
 import React from 'react';
-import StyledPostCommentForm from './elements';
-import PostCommentFormProps from './types';
+import StyledPostItemCommentForm from './elements';
+import PostItemCommentFormProps from './types';
 import TextField from '@/components/atoms/TextField';
 
 // mui icons
 import FaceIcon from '@mui/icons-material/Face';
 
-const CommentForm = (props: PostCommentFormProps) => {
+const PostItemCommentForm = (props: PostItemCommentFormProps) => {
   const { onEnter, ...rest } = props;
 
   return (
-    <StyledPostCommentForm {...rest}>
+    <StyledPostItemCommentForm {...rest}>
       <FaceIcon fontSize="large" className="profile" />
       <TextField
         placeholder="Write a comment"
@@ -18,8 +18,8 @@ const CommentForm = (props: PostCommentFormProps) => {
         className="comment_input"
         onKeyDown={onEnter}
       />
-    </StyledPostCommentForm>
+    </StyledPostItemCommentForm>
   );
 };
 
-export default CommentForm;
+export default PostItemCommentForm;
