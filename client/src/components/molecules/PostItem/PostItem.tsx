@@ -8,8 +8,20 @@ import PostItemDescription from '../PostItemDescription';
 import PostItemImage from '../PostItemImage';
 import PostItemControls from '../PostItemControls';
 
+// organism
+import PostItemCommentItemList from '@/components/organisms/PostItemCommentItemList';
+
 const PostItem = (props: PostItemProps) => {
-  const { item, onClickClose, onClickComment, onClickLike, ...rest } = props;
+  const {
+    item,
+    comments,
+    onClickClose,
+    onClickComment,
+    onClickLike,
+    onClickCommentLike,
+    onClickCommentReply,
+    ...rest
+  } = props;
 
   return (
     <StyledPostItem {...rest}>
@@ -25,6 +37,11 @@ const PostItem = (props: PostItemProps) => {
       <PostItemControls
         onClickComment={onClickComment}
         onClickLike={onClickLike}
+      />
+      <PostItemCommentItemList
+        data={comments}
+        onClickLike={onClickCommentLike}
+        onClickReply={onClickCommentReply}
       />
     </StyledPostItem>
   );

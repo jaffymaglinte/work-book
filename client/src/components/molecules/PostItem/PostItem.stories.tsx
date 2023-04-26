@@ -2,7 +2,7 @@ import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 
 import PostItem from '.';
-import { Item } from './types';
+import { Item, Comment } from './types';
 
 // mui icons
 import FaceIcon from '@mui/icons-material/Face';
@@ -24,6 +24,12 @@ const meta = {
     onClickComment: {
       action: 'clicked',
     },
+    onClickCommentLike: {
+      action: 'clicked',
+    },
+    onClickCommentReply: {
+      action: 'clicked',
+    },
   },
 } satisfies Meta<typeof PostItem>;
 
@@ -40,9 +46,16 @@ const item: Item = {
   photo: PostImg,
 };
 
+const comments: Comment[] = [
+  { id: 1, name: 'Jaffy Maglinte', content: 'Lorem ipsum' },
+  { id: 2, name: 'Jaffy Maglinte', content: 'Lorem ipsum 2' },
+  { id: 3, name: 'Jaffy Maglinte', content: 'Lorem ipsum 3' },
+];
+
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Primary: Story = {
   args: {
     item,
+    comments,
   },
 };

@@ -1,16 +1,16 @@
 import React from 'react';
 import { Box, Typography, Link } from '@mui/material';
-import StyledPostItemComment from './elements';
+import StyledPostItemCommentItem from './elements';
 import PostItemCommentProps from './types';
 
 // mui icons
 import Face5Icon from '@mui/icons-material/Face5';
 
-const PostItemComment = (props: PostItemCommentProps) => {
+const PostItemCommentItem = (props: PostItemCommentProps) => {
   const { name, content, onClickReply, onClickLike, ...rest } = props;
 
   return (
-    <StyledPostItemComment {...rest}>
+    <StyledPostItemCommentItem {...rest}>
       <Box className="profile_picture">
         {/* TODO: will update after backend is implemented */}
         <Face5Icon />
@@ -27,8 +27,8 @@ const PostItemComment = (props: PostItemCommentProps) => {
           </Link>
         </Box>
       </Box>
-    </StyledPostItemComment>
+    </StyledPostItemCommentItem>
   );
 };
 
-export default PostItemComment;
+export default PostItemCommentItem;
