@@ -3,6 +3,7 @@ import { BoxProps } from '@mui/material';
 export default interface PostItemProps extends BoxProps {
   item: Item;
   comments: Comment[];
+  totalLikes: number;
   onClickClose: (event: React.MouseEvent<HTMLElement>) => void;
   onClickLike: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
   onClickComment: (
