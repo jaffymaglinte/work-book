@@ -51,11 +51,13 @@ const comments: Comment[] = [
   { id: 2, name: 'Jaffy Maglinte', content: 'Lorem ipsum 2' },
   { id: 3, name: 'Jaffy Maglinte', content: 'Lorem ipsum 3' },
 ];
+const totalLikes: number = 5;
 
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Primary: Story = {
   args: {
     item,
     comments,
+    totalLikes,
   },
 };

@@ -9,7 +9,8 @@ import ThumbUpOutlinedIcon from '@mui/icons-material/ThumbUpOutlined';
 import ChatBubbleOutlineOutlinedIcon from '@mui/icons-material/ChatBubbleOutlineOutlined';
 
 const PostItemControls = (props: PostItemControlsProps) => {
-  const { onClickComment, onClickLike, ...rest } = props;
+  const { totalLikes, totalComments, onClickComment, onClickLike, ...rest } =
+    props;
   return (
     <StyledPostItemControls {...rest}>
       <Box className="control_header">
@@ -17,9 +18,11 @@ const PostItemControls = (props: PostItemControlsProps) => {
           <IconButton className="control_icon">
             <ThumbUpOutlinedIcon />
           </IconButton>
-          <Box>209</Box>
+          <Box>{totalLikes}</Box>
         </Box>
-        <Box className="control_box">38 comments</Box>
+        <Box className="control_box">
+          {totalComments} {totalComments !== 0 ? 'comments' : 'comment'}
+        </Box>
       </Box>
       <Box className="actions">
         <Button onClick={onClickLike} startIcon={<ThumbUpOutlinedIcon />}>

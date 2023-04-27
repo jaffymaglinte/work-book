@@ -15,6 +15,7 @@ const PostItem = (props: PostItemProps) => {
   const {
     item,
     comments,
+    totalLikes,
     onClickClose,
     onClickComment,
     onClickLike,
@@ -35,6 +36,8 @@ const PostItem = (props: PostItemProps) => {
       <PostItemDescription children={item.content} />
       <PostItemImage imageSrc={item.photo} />
       <PostItemControls
+        totalLikes={totalLikes}
+        totalComments={comments.length}
         onClickComment={onClickComment}
         onClickLike={onClickLike}
       />
