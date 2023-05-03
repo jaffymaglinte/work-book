@@ -10,7 +10,7 @@ import storyIcon from '@/assets/img/feed/story_profile_sample.jpeg';
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
 const meta = {
-  title: 'Organism/StoryItemList',
+  title: 'Organisms/StoryItemList',
   component: StoryItemList,
 } satisfies Meta<typeof StoryItemList>;
 

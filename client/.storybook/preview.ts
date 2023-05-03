@@ -1,6 +1,7 @@
 import React from 'react';
 import type { Preview } from '@storybook/react';
 import './../src/index.css';
+import './../src/themes/light.css';
 
 const preview: Preview = {
   parameters: {
