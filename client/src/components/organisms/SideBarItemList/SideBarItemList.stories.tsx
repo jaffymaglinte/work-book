@@ -14,7 +14,7 @@ import GroupIcon from '@mui/icons-material/Group';
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
 const meta = {
-  title: 'Organism/SideBarItemList',
+  title: 'Organisms/SideBarItemList',
   component: SideBarItemList,
 } satisfies Meta<typeof SideBarItemList>;
 

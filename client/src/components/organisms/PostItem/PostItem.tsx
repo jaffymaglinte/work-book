@@ -3,10 +3,10 @@ import StyledPostItem from './elements';
 import PostItemProps from './types';
 
 // molecules
-import PostItemHeader from '../PostItemHeader';
-import PostItemDescription from '../PostItemDescription';
-import PostItemImage from '../PostItemImage';
-import PostItemControls from '../PostItemControls';
+import PostItemHeader from '@/components/molecules/PostItemHeader';
+import PostItemDescription from '@/components/molecules/PostItemDescription';
+import PostItemImage from '@/components/molecules/PostItemImage';
+import PostItemControls from '@/components/molecules/PostItemControls';
 
 // organism
 import PostItemCommentItemList from '@/components/organisms/PostItemCommentItemList';
