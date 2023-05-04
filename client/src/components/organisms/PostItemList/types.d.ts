@@ -1,7 +1,12 @@
 import { BoxProps } from '@mui/material';
+import { Item, Comment } from '../PostItem/types';
 
-export default interface PostItemProps extends BoxProps {
-  item: Item;
+export default interface PostItemListProps extends BoxProps {
+  data: {
+    item: Item;
+    comments: Comment[];
+    totalLikes: number;
+  }[];
   onClickClose: (event: React.MouseEvent<HTMLElement>) => void;
   onClickLike: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
   onClickComment: (
@@ -10,25 +15,3 @@ export default interface PostItemProps extends BoxProps {
   onClickCommentLike: (event: React.MouseEvent<HTMLElement>) => void;
   onClickCommentReply: (event: React.MouseEvent<HTMLElement>) => void;
 }
-
-export enum Status {
-  PUBLIC = 'PUBLIC',
-  PRIVATE = 'PUBLIC',
-}
-
-export type Item = {
-  profile: React.ReactNode;
-  postBy: string;
-  postDate: string;
-  postStatus: Status;
-  content: string;
-  photo: string;
-  comments: Comment[];
-  totalLikes: number;
-};
-
-export type Comment = {
-  id: number;
-  name: string;
-  content: string;
-};

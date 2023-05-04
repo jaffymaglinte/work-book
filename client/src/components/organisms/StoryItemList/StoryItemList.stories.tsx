@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { StoryItemList } from '.';
+import StoryItemList from '.';
 
 import { StoryItem } from '@/components/molecules/StoryItem';
 import { Story as _Story } from './types';
