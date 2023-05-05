@@ -6,6 +6,7 @@ const StyledPostItemHeader = styled(Box)`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 10px;
 
   & .posted_by {
     font-weight: 500;

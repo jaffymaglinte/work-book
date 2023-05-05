@@ -81,6 +81,7 @@ const HomePage = () => {
           );
         })}
       </StoryItemList> */}
+
       <CreatePost {...createPostObj} />
       <PostItem {...postItemObj} />
     </StyledHomepage>
