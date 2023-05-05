@@ -16,9 +16,14 @@
     "@fontsource/roboto": "^4.5.8",
     "@mui/icons-material": "^5.11.16",
     "@mui/material": "^5.12.1",
+    "localforage": "^1.10.0",
+    "match-sorter": "^6.3.1",
+    "normalize.css": "^8.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-multi-carousel": "^2.8.3"
+    "react-multi-carousel": "^2.8.3",
+    "react-router-dom": "^6.11.0",
+    "sort-by": "^1.2.0"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.0.6",

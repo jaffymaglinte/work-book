@@ -14,8 +14,6 @@ import PostItemCommentItemList from '@/components/organisms/PostItemCommentItemL
 const PostItem = (props: PostItemProps) => {
   const {
     item,
-    comments,
-    totalLikes,
     onClickClose,
     onClickComment,
     onClickLike,
@@ -36,13 +34,13 @@ const PostItem = (props: PostItemProps) => {
       <PostItemDescription children={item.content} />
       <PostItemImage imageSrc={item.photo} />
       <PostItemControls
-        totalLikes={totalLikes}
-        totalComments={comments.length}
+        totalLikes={item.totalLikes}
+        totalComments={item.comments.length}
         onClickComment={onClickComment}
         onClickLike={onClickLike}
       />
       <PostItemCommentItemList
-        data={comments}
+        data={item.comments}
         onClickLike={onClickCommentLike}
         onClickReply={onClickCommentReply}
       />

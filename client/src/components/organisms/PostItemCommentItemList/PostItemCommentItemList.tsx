@@ -9,7 +9,7 @@ const PostItemCommentItemList = (props: PostItemCommentItemListProps) => {
 
   return (
     <StyledPostItemCommentItemList {...rest}>
-      {data.map((i: any) => {
+      {data.map((i: any, index: number) => {
         return (
           <PostItemCommentItem
             name={i.name}
@@ -17,6 +17,7 @@ const PostItemCommentItemList = (props: PostItemCommentItemListProps) => {
             onClickLike={onClickLike}
             onClickReply={onClickReply}
             className="comment_item"
+            key={index}
           />
         );
       })}

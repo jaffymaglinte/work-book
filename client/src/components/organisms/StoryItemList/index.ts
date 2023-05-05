@@ -1,3 +1,3 @@
 import StoryItemList from './StoryItemList';
 
-export { StoryItemList };
+export default StoryItemList;
