@@ -1,8 +1,12 @@
 import { BoxProps } from '@mui/material';
 
 export default interface CreatePostProps extends BoxProps {
-  imgSrc: string;
+  imgsrc: string;
   label: string;
-  onClickPhotoVideo: () => void;
-  onClickFeelingActivity: () => void;
+  onClickPhotoVideo: (
+    event: React.MouseEvent<HTMLButtonElement, MouseEvent>,
+  ) => void;
+  onClickFeelingActivity: (
+    event: React.MouseEvent<HTMLButtonElement, MouseEvent>,
+  ) => void;
 }

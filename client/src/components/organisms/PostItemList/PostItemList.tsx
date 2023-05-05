@@ -17,7 +17,7 @@ const PostItemList = (props: PostItemListProps) => {
 
   return (
     <StyledPostItemList>
-      {data.map((item: Item) => {
+      {data.map((item: Item, index: number) => {
         const postItemObj: PostItemProps = {
           item: item,
           onClickClose: () => {},
@@ -27,7 +27,7 @@ const PostItemList = (props: PostItemListProps) => {
           onClickCommentReply,
         };
 
-        return <PostItem {...postItemObj} />;
+        return <PostItem {...postItemObj} key={index} />;
       })}
     </StyledPostItemList>
   );

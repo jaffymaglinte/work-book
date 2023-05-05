@@ -13,19 +13,20 @@ import AddPhotoAlternateIcon from '@mui/icons-material/AddPhotoAlternate';
 import AddReactionIcon from '@mui/icons-material/AddReaction';
 
 const CreatePost = (props: CreatePostProps) => {
-  const { imgSrc, label, onClickPhotoVideo, onClickFeelingActivity } = props;
+  const { imgsrc, label, onClickPhotoVideo, onClickFeelingActivity, ...rest } =
+    props;
   return (
-    <StyledCreatePost {...props}>
+    <StyledCreatePost {...rest}>
       <LeftIconWithButton
-        imageSrc={imgSrc}
+        imageSrc={imgsrc}
         label={label}
         onClickButton={() => {}}
       />
       <ActionWrapper>
-        <Button onClick={onClickPhotoVideo}>
+        <Button onClick={onClickPhotoVideo} type="button">
           <AddPhotoAlternateIcon /> Photo/Video
         </Button>
-        <Button onClick={onClickFeelingActivity}>
+        <Button onClick={onClickFeelingActivity} type="button">
           <AddReactionIcon /> Feeling/Activity
         </Button>
       </ActionWrapper>

@@ -6,8 +6,10 @@ import { StoryItem } from '@/components/molecules/StoryItem';
 
 // organisms
 import CreatePost from '@/components/organisms/CreatePost';
+import PostItemList, {
+  PostItemListProps,
+} from '@/components/organisms/PostItemList';
 import StoryItemList from '@/components/organisms/StoryItemList';
-import PostItem from '@/components/organisms/PostItem';
 
 // props
 import CreatePostProps from '@/components/organisms/CreatePost/types';
@@ -17,23 +19,18 @@ import PostItemProps, {
   Comment,
 } from '@/components/organisms/PostItem/types';
 
-// assets
-import {
-  sampleProfile,
-  storySampleImg,
-  storyIcon,
-  PostSampleImg,
-} from '@/assets/img';
+// dummy
+import { dummyPostItemListObj } from './dummyData';
 
-// mui icons
-import FaceIcon from '@mui/icons-material/Face';
+// assets
+import { sampleProfile, storySampleImg, storyIcon } from '@/assets/img';
 
 const HomePage = () => {
   const createPostObj: CreatePostProps = {
-    imgSrc: sampleProfile,
+    imgsrc: sampleProfile,
     label: `What's on your mind User?`,
-    onClickPhotoVideo: () => {},
-    onClickFeelingActivity: () => {},
+    onClickPhotoVideo: (event) => {},
+    onClickFeelingActivity: (event) => {},
   };
 
   // TODO: need to refactor story
@@ -48,22 +45,8 @@ const HomePage = () => {
     ],
   };
 
-  const postItemObj: PostItemProps = {
-    item: {
-      profile: <FaceIcon />,
-      postBy: 'Jaffy Maglinte',
-      postDate: '2023/10/21',
-      content: `In ReactJS with TypeScript, ReactNode is a type that represents a React element, an array of React elements, or a string, number, or boolean. It is defined in the react module and can be used to specify the type of a variable that can hold any of these types.`,
-      // @ts-ignore: Unreachable code error
-      postStatus: 'PUBLIC',
-      photo: PostSampleImg,
-      comments: [
-        { id: 1, name: 'Jaffy Maglinte', content: 'Lorem ipsum' },
-        { id: 2, name: 'Jaffy Maglinte', content: 'Lorem ipsum 2' },
-        { id: 3, name: 'Jaffy Maglinte', content: 'Lorem ipsum 3' },
-      ],
-      totalLikes: 100,
-    },
+  const postItemListObj: PostItemListProps = {
+    ...dummyPostItemListObj,
     onClickClose: () => {},
     onClickLike: () => {},
     onClickComment: () => {},
@@ -83,7 +66,7 @@ const HomePage = () => {
       </StoryItemList> */}
 
       <CreatePost {...createPostObj} />
-      <PostItem {...postItemObj} />
+      <PostItemList {...postItemListObj} />
     </StyledHomepage>
   );
 };
