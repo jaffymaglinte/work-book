@@ -1,4 +1,6 @@
 import type { StorybookConfig } from '@storybook/react-vite';
+import { mergeConfig } from 'vite';
+
 const config: StorybookConfig = {
   stories: [
     '../src/**/*.mdx',
@@ -13,6 +15,11 @@ const config: StorybookConfig = {
   ],
   core: {
     builder: '@storybook/builder-vite', // 👈 The builder enabled here.
+  },
+  async viteFinal(config) {
+    return mergeConfig(config, {
+      // Your environment configuration here
+    });
   },
   framework: {
     name: '@storybook/react-vite',
