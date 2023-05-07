@@ -6,9 +6,8 @@ import IconButton from '@mui/material/IconButton';
 // mui icons
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
-import { Typography } from '@mui/material';
 
-import StyledLoginForm, { HeaderWrapper, FormWrapper } from './elements';
+import StyledLoginForm, { FormWrapper } from './elements';
 import LoginFormProps from './types';
 import TextField from '@/components/atoms/TextField';
 import { Button } from '@/components/atoms/Button';
@@ -27,10 +26,6 @@ const LoginForm = (props: LoginFormProps) => {
 
   return (
     <StyledLoginForm>
-      <HeaderWrapper>
-        <Typography variant="h4">Sign in to WorkBook</Typography>
-        <Typography variant="subtitle1">Lorem Ipsum generator</Typography>
-      </HeaderWrapper>
       <FormWrapper>
         <Formik
           initialValues={{ email: '', password: '' }}
