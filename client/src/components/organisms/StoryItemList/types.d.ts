@@ -1,4 +1,4 @@
-export type Story = {
+export type StoryProps = {
   id: number;
   img: string | undefined;
   profile: string | undefined;
