@@ -9,15 +9,11 @@ import CreatePost from '@/components/organisms/CreatePost';
 import PostItemList, {
   PostItemListProps,
 } from '@/components/organisms/PostItemList';
-import StoryItemList from '@/components/organisms/StoryItemList';
+// import StoryItemList from '@/components/organisms/StoryItemList';
 
 // props
 import CreatePostProps from '@/components/organisms/CreatePost/types';
-import { Story } from '@/components/organisms/StoryItemList/types';
-import PostItemProps, {
-  Item,
-  Comment,
-} from '@/components/organisms/PostItem/types';
+import { StoryProps } from '@/components/organisms/StoryItemList/types';
 
 // dummy
 import { dummyPostItemListObj } from './dummyData';
@@ -34,7 +30,7 @@ const HomePage = () => {
   };
 
   // TODO: need to refactor story
-  const StoryObj: { data: Story[] } = {
+  const StoryObj: { data: StoryProps[] } = {
     data: [
       {
         id: 1,
@@ -56,15 +52,6 @@ const HomePage = () => {
 
   return (
     <StyledHomepage>
-      {/* <StoryItemList>
-        {StoryObj.data.map((story: Story) => {
-          const { id, title, profile, img } = story;
-          return (
-            <StoryItem title={title} profile={profile} img={img} key={id} />
-          );
-        })}
-      </StoryItemList> */}
-
       <CreatePost {...createPostObj} />
       <PostItemList {...postItemListObj} />
     </StyledHomepage>
