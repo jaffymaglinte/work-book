@@ -23,7 +23,7 @@ const PostItemHeader = (props: PostItemHeaderProps) => {
         <Box className="detail">
           <Box className="posted_by">{postBy}</Box>
           <Box className="detail_box">
-            {postDate} ·{' '}
+            <span>{postDate} · </span>
             {postStatus === 'PUBLIC' ? (
               <PublicIcon fontSize="small" className="pub_pri_ico" />
             ) : (

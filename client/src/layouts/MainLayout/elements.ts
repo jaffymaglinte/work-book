@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import { Box } from '@mui/material';
 
 const StyledMainLayout = styled(Box)`
-  padding: 0 25px;
+  padding: 0;
 `;
 
 export const MiddleContainer = styled(Box)`
