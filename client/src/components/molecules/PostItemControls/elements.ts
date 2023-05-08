@@ -12,10 +12,16 @@ const StyledPostItemControls = styled(Box)`
       display: flex;
       align-items: center;
       gap: 5px;
+      font-size: 12px;
 
       button {
         background-color: #1489f6;
         color: #fff;
+        padding: 5px;
+
+        svg {
+          font-size: 12px;
+        }
       }
 
       .control_icon {
@@ -28,11 +34,20 @@ const StyledPostItemControls = styled(Box)`
     }
   }
 
+  .control_box {
+    color: var(--secondary-text);
+  }
+
   & .actions {
     display: grid;
     grid-template-columns: 1fr 1fr;
     border-top: 1px solid #ececec;
     border-bottom: 1px solid #ececec;
+
+    button {
+      color: var(--secondary-text);
+      font-size: 12px;
+    }
   }
 
   button {

@@ -6,7 +6,7 @@ const StyledPostItemHeader = styled(Box)`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 10px 20px 0;
 
   & .posted_by {
     font-weight: 500;
@@ -21,11 +21,13 @@ const StyledPostItemHeader = styled(Box)`
   & .detail_box {
     display: flex;
     align-items: center;
-    color: gray;
+    color: var(--secondary-text);
+    font-size: 12px;
 
     & .pub_pri_ico {
       margin-left: 5px;
       color: black;
+      font-size: 15px;
     }
   }
 

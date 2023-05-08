@@ -3,7 +3,7 @@ import StyledHeader, {
   StyledLogoSection,
   StyledCenterSection,
   StyledSettingSection,
-} from './Elements';
+} from './elements';
 import TextField from '@/components/atoms/TextField';
 import { Tabs } from '@/components/atoms/Tabs';
 import { Tab } from '@/components/atoms/Tab';

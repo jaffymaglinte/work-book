@@ -5,6 +5,7 @@ const StyledCreatePost = styled(Box)`
   padding: 12px 10px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
+  background-color: var(--surface-background);
 `;
 
 export const ActionWrapper = styled(Box)`
