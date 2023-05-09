@@ -26,7 +26,7 @@ const dataSource = [
   },
   {
     id: 'test-id3',
-    part_name: 'ax203',
+    part_name: 'ax203ASDASDASDASDASD ASD ASD ADASDASD',
     part_status: 'active',
   },
 ];
