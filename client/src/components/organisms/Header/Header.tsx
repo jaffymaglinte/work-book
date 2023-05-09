@@ -20,6 +20,9 @@ import MessageIcon from '@mui/icons-material/Message';
 import FaceRetouchingNaturalIcon from '@mui/icons-material/FaceRetouchingNatural';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 
+// assets
+import { sampleProfile } from '@/assets/img';
+
 const Header = () => {
   const [value, setValue] = React.useState(0);
 
@@ -39,22 +42,23 @@ const Header = () => {
         <Tabs value={value} onChange={handleChange} centered>
           <Tab icon={<HomeIcon />} /> 
           <Tab icon={<YouTubeIcon />} /> 
-          <Tab icon={<StoreIcon />} /> 
           <Tab icon={<PeopleIcon />} /> 
         </Tabs>
       </StyledCenterSection>
       <StyledSettingSection>
-        <Button>
-          <WidgetsIcon />
-        </Button>
         <Button>
           <MessageIcon />
         </Button>
         <Button>
           <NotificationsIcon />
         </Button>
-        <Button>
-          <FaceRetouchingNaturalIcon />
+        <Button
+          sx={{
+            overflow: 'hidden',
+            width: '40px',
+            padding: '0',
+          }}>
+          <img src={sampleProfile} alt="profile" />
         </Button>
       </StyledSettingSection>
     </StyledHeader>
