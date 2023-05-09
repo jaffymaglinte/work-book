@@ -8,7 +8,7 @@ const StyledMainLayout = styled(Box)`
 export const MiddleContainer = styled(Box)`
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: 240px 2fr 1fr;
+  grid-template-columns: 240px auto 240px;
   padding-top: 10px;
   width: 100%;
   max-width: 1280px;
